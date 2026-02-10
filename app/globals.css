@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* SCUF Core Colors */
+  --scuf-green: #45a685;
+  --scuf-red: #e2605d;
+  --scuf-dark: #333436;
+  --scuf-yellow: #f7e391;
+
+  /* SCUF Neutrals */
+  --neutral-green: #a3cba1;
+  --neutral-red: #fabdbd;
+  --neutral-light: #f6f5f5;
+  --neutral-cream: #fffbea;
+
+  /* Semantic Mappings */
+  --background: var(--neutral-light);
+  --foreground: var(--scuf-dark);
+  --primary: var(--scuf-green);
+  --secondary: var(--scuf-yellow);
+  --accent: var(--scuf-red);
+}
+
+@theme {
+  /* Color Palette */
+  --color-scuf-green: var(--scuf-green);
+  --color-scuf-red: var(--scuf-red);
+  --color-scuf-dark: var(--scuf-dark);
+  --color-scuf-yellow: var(--scuf-yellow);
+  
+  --color-neutral-green: var(--neutral-green);
+  --color-neutral-red: var(--neutral-red);
+  --color-neutral-light: var(--neutral-light);
+  --color-neutral-cream: var(--neutral-cream);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  /* Typography */
+  --font-lato: "Lato", sans-serif;
+  
+  /* Border Radius */
+  --radius-3xl: 1.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), sans-serif;
+}
+
+/* Base styles for S1/S2 segments */
+.s1-play {
+  background-color: var(--neutral-cream);
+  --primary: var(--scuf-green);
+  --accent: var(--scuf-yellow);
+}
+
+.s2-engage {
+  background-color: var(--neutral-light);
+  --primary: var(--scuf-dark);
+  --accent: var(--scuf-green);
+}
